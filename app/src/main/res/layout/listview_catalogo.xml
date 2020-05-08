@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/Modello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="44dp"
+            android:text="Modello:"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Altezza"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="28dp"
+            android:text="Altezza:"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/valoreAltezza"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/valoreAltezza" />
+
+        <TextView
+            android:id="@+id/Lunghezza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunghezza:"
+            android:textColor="#000000"
+            app:layout_constraintBaseline_toBaselineOf="@+id/valoreLunghezza"
+            app:layout_constraintStart_toStartOf="@+id/Altezza" />
+
+        <TextView
+            android:id="@+id/Specifiche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="SPECIFICHE"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Telaio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="152dp"
+            android:text="Telaio:"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/Lunghezza"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Freni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="Freni:"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/Telaio"
+            app:layout_constraintTop_toBottomOf="@+id/Telaio" />
+
+        <TextView
+            android:id="@+id/valoreModello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="valoreModello"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/valoreAltezza"
+            app:layout_constraintTop_toBottomOf="@+id/Specifiche" />
+
+        <TextView
+            android:id="@+id/valoreAltezza"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="35dp"
+            android:text="valoreAltezza"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="@+id/valoreLunghezza"
+            app:layout_constraintStart_toStartOf="@+id/valoreLunghezza"
+            app:layout_constraintTop_toTopOf="@+id/valoreModello" />
+
+        <TextView
+            android:id="@+id/valoreLunghezza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="16dp"
+            android:text="valoreLunghezza"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/Telaio"
+            app:layout_constraintStart_toEndOf="@+id/Lunghezza" />
+
+
+        <TextView
+            android:id="@+id/valoreTelaio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="valoreTelaio"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/valoreLunghezza"
+            app:layout_constraintTop_toBottomOf="@+id/valoreLunghezza" />
+
+        <TextView
+            android:id="@+id/valoreFreni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:text="valoreFreni"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/valoreTelaio"
+            app:layout_constraintTop_toBottomOf="@+id/valoreTelaio" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

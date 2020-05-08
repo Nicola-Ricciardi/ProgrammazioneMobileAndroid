@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/baseline_account_circle_black_18dp"
+        android:title="User" />
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/navigation_information"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Info" />
+
+</menu>
